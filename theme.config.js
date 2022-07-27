@@ -1,12 +1,15 @@
+import Image from 'next/image'
+
 export default {
   github: 'https://github.com/shuding/nextra',
   docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  titleSuffix: ' – Mediacool',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <Image src="/mediaCool_logo.svg" alt="Hello" width={30} height={30} />
+      <span className="mr-2 ml-2 font-extrabold hidden md:inline">Mediacool</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        StyleGuide
       </span>
     </>
   ),
@@ -16,13 +19,13 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Nextra: the Next.js site builder" />
-      <meta name="og:description" content="Nextra: the Next.js site builder" />
+      <meta name="description" content="Mediacool: Mediatool's Design System" />
+      <meta name="og:description" content="Mediacool: Mediatool's Design System" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
       <meta name="twitter:site:domain" content="nextra.vercel.app" />
       <meta name="twitter:url" content="https://nextra.vercel.app" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
+      <meta name="og:title" content="Mediacool: Mediatool's Design System" />
       <meta name="og:image" content="https://nextra.vercel.app/og.png" />
       <meta name="apple-mobile-web-app-title" content="Nextra" />
       <link
@@ -61,7 +64,7 @@ export default {
   prevLinks: true,
   nextLinks: true,
   footer: true,
-  footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  footerEditLink: 'Mediatool.com',
+  footerText: <>Mediacool {new Date().getFullYear()} © Mediatool AB.</>,
   unstable_faviconGlyph: '👋',
 }
